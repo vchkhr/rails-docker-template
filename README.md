@@ -8,7 +8,7 @@ Based on [Awesome Compose](https://github.com/docker/awesome-compose/blob/master
 - Devise authentication.
 - MailCatcher ([http://localhost:1080/](http://localhost:1080/)).
 - Bootstrap styles and icons.
-- Navbar, styled auth pages, demo home and article pages.
+- Navbar, styled auth pages, demo home, and article pages.
 
 You can rename the application by replacing "myapp" manually.
 
@@ -24,6 +24,16 @@ docker compose up
 ```bash
 docker compose down
 ```
+
+## Make changes in the app
+
+After running the app, you can execute commands in the app container:
+
+```bash
+docker exec -it <container name> bash
+```
+
+Replace `<container name>` with the actual container name (run `docker ps` to get the name).
 
 ## Rebuild the app
 
